@@ -1,0 +1,10 @@
+<template name="statefarm">
+	<div class="map-container">
+		{{> googleMap name="stateFarmMap" options=mapOptions}}
+	</div>
+	{{#each things}}
+		{{_id}}
+	{{/each}}
+	<button id="getBackground">Start</button>
+	<div id="btnFeedback"></div>
+</template>
